@@ -11,6 +11,7 @@ namespace Morpion
         // Fonction permettant l'affichage du Morpion
         public static void AfficherMorpion(int j, int k)
         {
+            Console.WriteLine("peter et chier");
             // A compléter 
           
         }
