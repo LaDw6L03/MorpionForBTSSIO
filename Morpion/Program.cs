@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Security.Policy;
 using System.Text.RegularExpressions;
 
@@ -38,7 +37,11 @@ namespace Morpion
         // n'est pas déjà jouée
         public static bool AJouer(int j, int k, int joueur)
         {
-            // A compléter 
+            if (j >= 0 && j < 3 && k >= 0 && k < 3 && grille[j, k] == 10)
+            {
+                grille[j, k] = joueur;
+                return true;
+            }
             return false;
         }
 
