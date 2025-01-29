@@ -45,13 +45,16 @@ namespace Morpion
             return false;
         }
 
-        // Fonction permettant de vérifier
-        // si un joueur à gagner
+        // Fonction permettant de vérifier si un joueur a gagné
         public static bool Gagner(int l, int c, int joueur)
         {
-            // A compléter 
-            return false;
+            // Vérification des lignes, colonnes et diagonales
+            return (grille[l, 0] == joueur && grille[l, 1] == joueur && grille[l, 2] == joueur) ||
+                   (grille[0, c] == joueur && grille[1, c] == joueur && grille[2, c] == joueur) ||
+                   (grille[0, 0] == joueur && grille[1, 1] == joueur && grille[2, 2] == joueur) ||
+                   (grille[0, 2] == joueur && grille[1, 1] == joueur && grille[2, 0] == joueur);
         }
+
 
         // Programme principal
         static void Main(string[] args)
