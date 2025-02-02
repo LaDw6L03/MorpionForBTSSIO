@@ -76,11 +76,10 @@ namespace Morpion
                     grille[j, k] = 10;
             while (!gagner && essais != 9)
             {
-
-                // A compléter 
                 AfficherMorpion(j, k);
                 try
                 {
+                    Console.WriteLine("Joueur " + joueur);
                     Console.WriteLine("Ligne   =    ");
                     Console.WriteLine("Colonne =    ");
                     // Peut changer en fonction de comment vous avez fait votre tableau.
@@ -90,7 +89,17 @@ namespace Morpion
                     Console.SetCursorPosition(LigneDébut + 10, ColonneDébut + 10); // Permet de manipuler le curseur dans la fenêtre 
                     c = int.Parse(Console.ReadLine()) - 1;
 
-                    // A compléter 
+                    bonnePosition = AJouer(l, c, joueur);
+                    if (bonnePosition)
+                    {
+                        essais++;
+                        gagner = Gagner(l, c, joueur);
+                        if (!gagner)
+                        {
+                            // Changement de joueur
+                            joueur = (joueur == 1) ? 2 : 1;
+                        }
+                    }
 
                 }
                 catch (Exception e)
