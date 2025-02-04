@@ -29,12 +29,8 @@ namespace Morpion
             }
         }
 
-        // Fonction permettant de changer
-        // dans le tableau qu'elle est le 
-        // joueur qui à jouer
-        // Bien vérifier que le joueur ne sort
-        // pas du tableau et que la position
-        // n'est pas déjà jouée
+        // Fonction permettant de changer dans le tableau quel est le joueur qui a joué
+        // Vérifie que le joueur ne sort pas du tableau et que la position n'est pas déjà jouée
         public static bool AJouer(int j, int k, int joueur)
         {
             if (j >= 0 && j < 3 && k >= 0 && k < 3 && grille[j, k] == 10)
@@ -55,7 +51,6 @@ namespace Morpion
                    (grille[0, 2] == joueur && grille[1, 1] == joueur && grille[2, 0] == joueur);
         }
 
-
         // Programme principal
         static void Main(string[] args)
         {
@@ -67,13 +62,14 @@ namespace Morpion
             int joueur = 1;   // 1 pour la premier joueur, 2 pour le second
             int l, c = 0;      // numéro de ligne et de colonne
             int j, k = 0;      // Parcourir le tableau en 2 dimensions
-            bool gagner = false; // Permet de vérifier si un joueur à gagné 
-            bool bonnePosition = false; // Permet de vérifier si la position souhaité est disponible
+            bool gagner = false; // Permet de vérifier si un joueur a gagné 
+            bool bonnePosition = false; // Permet de vérifier si la position souhaitée est disponible
 
             //- On met chaque valeur du tableau à 10
             for (j = 0; j < grille.GetLength(0); j++)
                 for (k = 0; k < grille.GetLength(1); k++)
                     grille[j, k] = 10;
+
             while (!gagner && essais != 9)
             {
                 AfficherMorpion(j, k);
@@ -100,21 +96,32 @@ namespace Morpion
                             joueur = (joueur == 1) ? 2 : 1;
                         }
                     }
-
+                    else
+                    {
+                        Console.WriteLine("Position invalide. Appuyez sur une touche pour réessayer.");
+                        Console.ReadKey();
+                    }
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e.ToString());
+                    Console.WriteLine("Erreur : " + e.Message);
+                    Console.WriteLine("Appuyez sur une touche pour réessayer.");
+                    Console.ReadKey();
                 }
-
-                // Changement de joueur
-                // A compléter 
-
-            }; // Fin TQ
+            }
 
             // Fin de la partie
-            // A compléter 
+            AfficherMorpion(j, k);
+            if (gagner)
+            {
+                Console.WriteLine("Le joueur " + joueur + " a gagné !");
+            }
+            else
+            {
+                Console.WriteLine("Match nul !");
+            }
 
+            Console.WriteLine("Appuyez sur une touche pour quitter.");
             Console.ReadKey();
         }
     }
