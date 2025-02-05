@@ -77,3 +77,14 @@ C:\Users\Temporaire\Desktop\Ap 3 c# Jeux\Morpion\MorpionForBTSSIO\Morpion\obj\x8
 C:\Users\Temporaire\Desktop\Ap 3 c# Jeux\Morpion\MorpionForBTSSIO\Morpion\obj\x86\Debug\Morpion.csproj.CoreCompileInputs.cache
 C:\Users\Temporaire\Desktop\Ap 3 c# Jeux\Morpion\MorpionForBTSSIO\Morpion\obj\x86\Debug\Morpion.exe
 C:\Users\Temporaire\Desktop\Ap 3 c# Jeux\Morpion\MorpionForBTSSIO\Morpion\obj\x86\Debug\Morpion.pdb
+C:\Users\a.dugat\Desktop\Morpion\MorpionForBTSSIO\Morpion\bin\Debug\Morpion.exe.config
+C:\Users\a.dugat\Desktop\Morpion\MorpionForBTSSIO\Morpion\bin\Debug\Morpion.exe
+C:\Users\a.dugat\Desktop\Morpion\MorpionForBTSSIO\Morpion\bin\Debug\Morpion.pdb
+C:\Users\a.dugat\Desktop\Morpion\MorpionForBTSSIO\Morpion\obj\x86\Debug\Morpion.csproj.AssemblyReference.cache
+C:\Users\a.dugat\Desktop\Morpion\MorpionForBTSSIO\Morpion\obj\x86\Debug\Morpion.csproj.CoreCompileInputs.cache
+C:\Users\a.dugat\Desktop\Morpion\MorpionForBTSSIO\Morpion\obj\x86\Debug\Morpion.exe
+C:\Users\a.dugat\Desktop\Morpion\MorpionForBTSSIO\Morpion\obj\x86\Debug\Morpion.pdb
+C:\Users\a.dugat\Desktop\Morpion\MorpionForBTSSIO\Morpion\bin\Debug\Morpion.exe.manifest
+C:\Users\a.dugat\Desktop\Morpion\MorpionForBTSSIO\Morpion\bin\Debug\Morpion.application
+C:\Users\a.dugat\Desktop\Morpion\MorpionForBTSSIO\Morpion\obj\x86\Debug\Morpion.exe.manifest
+C:\Users\a.dugat\Desktop\Morpion\MorpionForBTSSIO\Morpion\obj\x86\Debug\Morpion.application
